@@ -10,5 +10,5 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O2")
 
 include_directories(include)
 
-set(SOURCE_FILES src/main.cpp)
+set(SOURCE_FILES src/drone_sweeping.cpp)
 add_executable(Drone_sweeping ${SOURCE_FILES})
