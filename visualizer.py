@@ -2,7 +2,6 @@
 
 from PIL import Image, ImageDraw
 import cv2
-import time
 import numpy
 
 dir_path = "./"
@@ -67,14 +66,6 @@ draw.line(p, blue, width = 10)
 opencvImage = cv2.cvtColor(numpy.array(image), cv2.COLOR_RGB2BGR)
 cv2.imshow("Press any key to show next step", opencvImage)
 cv2.waitKey()
-
-#plt.axis('off')
-
-#plt.imshow(image)
-#plt.show()
-
-#image.show()
-#time.sleep(0.5)
 
 with open(dir_path + "output.txt") as f:
     f.readline()
